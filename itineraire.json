@@ -1,0 +1,375 @@
+{
+  "pays": "Albanie",
+  "drapeau": "🇦🇱",
+  "symbole": "🦅",
+  "titre": "Douce évasion hivernale en Albanie : Sources chaudes et trésors cachés",
+  "budget_total": "Environ 1760 €/pers",
+  "duree": "14 jours",
+  "date_debut": "2026-01-15",
+  "date_fin": "2026-01-29",
+  "temps_vol": "Environ 6h15 (depuis Saint Maurice, Italie)",
+  "escale": "0",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée à Tirana et premières impressions",
+      "legende": "Atterrissez en douceur dans la capitale albanaise. Après l'installation, une balade relaxante dans le centre vous permettra de vous imprégner de l'ambiance locale et de découvrir les couleurs vibrantes de la ville.",
+      "lieu": "Tirana",
+      "activites": [
+        "<strong>🛬 Arrivée</strong>: Atterrissage à l'aéroport international de Tirana (TIA) et récupération du véhicule de location.",
+        "<strong>🛏️ Installation</strong>: Check-in à votre hôtel au cœur de Tirana pour un repos bien mérité.",
+        "<strong>🚶‍♀️ Balade</strong>: Première exploration douce autour de la place Skanderbeg et du quartier de Blloku, autrefois réservé à l'élite communiste, aujourd'hui animé."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "🚗",
+          "titre": "Location de voiture",
+          "texte": "La location d'une voiture est fortement recommandée pour explorer l'Albanie à votre rythme et accéder aux sites plus reculés."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🎨",
+      "titre": "Immersion culturelle et pause gourmande",
+      "legende": "Plongez dans l'histoire complexe de l'Albanie à travers ses musées, puis offrez-vous une pause gourmande. L'après-midi sera dédiée à une promenade apaisante dans un parc, loin de l'agitation urbaine.",
+      "lieu": "Tirana",
+      "activites": [
+        "<strong>🏛️ Visite</strong>: Découverte du Bunk'Art 2, un musée fascinant aménagé dans un ancien bunker antiatomique, retraçant l'histoire du régime communiste.",
+        "<strong>🍽️ Déjeuner</strong>: Savourez des spécialités albanaises dans un restaurant local du centre-ville.",
+        "<strong>🌳 Promenade</strong>: Détendez-vous au Grand Parc de Tirana, un havre de paix idéal pour une balade tranquille autour du lac artificiel."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "Bunk'Art",
+          "texte": "Il existe deux Bunk'Art à Tirana. Bunk'Art 1 est plus grand et plus éloigné, Bunk'Art 2 est plus central et se concentre sur le ministère de l'Intérieur."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🏰",
+      "titre": "Route vers Berat et exploration médiévale",
+      "legende": "Prenez la route vers Berat, une ville classée au patrimoine mondial de l'UNESCO. Ses maisons ottomanes empilées sur la colline offrent un spectacle unique. L'après-midi sera consacrée à l'exploration de son château et de ses quartiers historiques.",
+      "lieu": "Berat",
+      "activites": [
+        "<strong>🚗 Trajet</strong>: Route panoramique de Tirana à Berat (environ 2h).",
+        "<strong>🏰 Visite</strong>: Explorez le château de Berat, toujours habité, et ses églises byzantines.",
+        "<strong>🚶‍♀️ Balade</strong>: Flânez dans les quartiers de Mangalem et Gorica, séparés par la rivière Osum, et admirez l'architecture ottomane."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "📸",
+          "titre": "Point de vue",
+          "texte": "Pour la meilleure vue sur les \"Mille Fenêtres\", traversez le pont de Gorica et regardez vers le quartier de Mangalem."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🍇",
+      "titre": "Dégustation de vins et après-midi libre",
+      "legende": "Profitez de la matinée pour découvrir les saveurs locales avec une visite de vignoble. L'après-midi sera libre pour vous détendre, explorer davantage Berat à votre rythme ou simplement profiter de l'ambiance paisible de la ville.",
+      "lieu": "Berat",
+      "activites": [
+        "<strong>🍷 Dégustation</strong>: Visite d'un vignoble local (ex: Kantina Cobo ou Nurellari) pour une dégustation de vins albanais.",
+        "<strong>🍽️ Déjeuner</strong>: Repas traditionnel dans une ferme-restaurant près du vignoble.",
+        "<strong>🧘‍♀️ Temps libre</strong>: Profitez d'un après-midi relaxant à Berat, peut-être pour un café au bord de la rivière ou une lecture tranquille."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Vins albanais",
+          "texte": "L'Albanie produit d'excellents vins, souvent méconnus. N'hésitez pas à goûter les cépages locaux comme le Kallmet ou le Shesh."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🗿",
+      "titre": "Route vers Gjirokastër et découverte historique",
+      "legende": "Poursuivez votre voyage vers le sud jusqu'à Gjirokastër, une autre ville UNESCO surnommée la \"Ville de Pierre\". Ses toits d'ardoise et son imposante forteresse vous transporteront dans le passé.",
+      "lieu": "Gjirokastër",
+      "activites": [
+        "<strong>🚗 Trajet</strong>: Route de Berat à Gjirokastër (environ 3h).",
+        "<strong>🏰 Visite</strong>: Exploration de l'impressionnant château de Gjirokastër, offrant des vues panoramiques sur la ville et la vallée.",
+        "<strong>🚶‍♀️ Balade</strong>: Flânez dans les ruelles pavées du vieux bazar et admirez les maisons-tours caractéristiques."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "📚",
+          "titre": "Littérature",
+          "texte": "Gjirokastër est la ville natale de l'écrivain Ismail Kadaré, dont les œuvres décrivent souvent l'atmosphère unique de la ville."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "♨️",
+      "titre": "Détente aux sources chaudes naturelles",
+      "legende": "Une journée dédiée à la relaxation profonde. Dirigez-vous vers Permet pour découvrir les célèbres sources chaudes de Benja, nichées dans un cadre naturel magnifique. Un moment de pur bien-être au cœur de la nature albanaise.",
+      "lieu": "Permet",
+      "activites": [
+        "<strong>🚗 Trajet</strong>: Route de Gjirokastër à Permet (environ 1h30) puis vers les sources de Benja.",
+        "<strong>♨️ Baignade</strong>: Profitez des eaux thermales naturelles des sources de Benja, réputées pour leurs vertus thérapeutiques.",
+        "<strong>🚶‍♀️ Promenade</strong>: Courte balade autour du pont ottoman de Kadiut et le long de la rivière Lengarica, dans un paysage apaisant."
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "⚠️",
+          "titre": "Accès",
+          "texte": "L'accès aux sources de Benja peut être un peu rustique en hiver, mais l'expérience en vaut la peine. Prévoyez des chaussures confortables."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🌊",
+      "titre": "Route vers la côte et ambiance méditerranéenne",
+      "legende": "Quittez l'intérieur des terres pour rejoindre la magnifique Riviera albanaise. Sarandë, avec ses vues sur Corfou, vous accueillera pour une ambiance plus douce et maritime.",
+      "lieu": "Sarandë",
+      "activites": [
+        "<strong>🚗 Trajet</strong>: Route de Permet à Sarandë (environ 2h30-3h), traversant des paysages variés.",
+        "<strong>🛏️ Installation</strong>: Check-in à votre hôtel à Sarandë, avec vue sur la mer si possible.",
+        "<strong>🚶‍♀️ Balade</strong>: Promenade relaxante le long de la promenade de Sarandë, en admirant le coucher de soleil sur la mer Ionienne."
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🍽️",
+          "titre": "Cuisine de la mer",
+          "texte": "Sarandë est réputée pour ses fruits de mer frais. Ne manquez pas de déguster un plat de poisson ou de fruits de mer locaux."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🏛️",
+      "titre": "Exploration archéologique et détente côtière",
+      "legende": "Une journée mêlant histoire et beauté naturelle. Visitez le site antique de Butrint, classé UNESCO, puis détendez-vous sur les plages idylliques de Ksamil, même en hiver, pour profiter de l'air marin.",
+      "lieu": "Ksamil / Butrint",
+      "activites": [
+        "<strong>🏛️ Visite</strong>: Découverte du parc archéologique de Butrint, un site antique magnifiquement préservé, témoin de plusieurs civilisations.",
+        "<strong>🍽️ Déjeuner</strong>: Repas dans un restaurant avec vue sur la mer à Ksamil.",
+        "<strong>🏖️ Détente</strong>: Promenade sur les plages de sable blanc de Ksamil, réputées pour leurs eaux cristallines (même si la baignade est froide en janvier)."
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "🌳",
+          "titre": "Nature et histoire",
+          "texte": "Butrint est un site unique où l'histoire se mêle à une nature luxuriante, offrant une atmosphère très paisible."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🛣️",
+      "titre": "Voyage le long de la côte ionienne",
+      "legende": "Empruntez la spectaculaire route côtière qui serpente entre mer et montagnes. Arrêtez-vous dans de charmants villages comme Himarë ou Dhermi pour des vues imprenables et une atmosphère authentique.",
+      "lieu": "Himarë / Dhermi",
+      "activites": [
+        "<strong>🚗 Trajet</strong>: Route panoramique de Sarandë vers le nord, le long de la Riviera Albanaise.",
+        "<strong>📸 Arrêts</strong>: Faites des pauses photo aux points de vue époustouflants et explorez les villages côtiers comme Himarë ou Dhermi.",
+        "<strong>☕ Pause</strong>: Profitez d'un café ou d'un thé dans un village, en observant la vie locale."
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "🌬️",
+          "titre": "Vent",
+          "texte": "En janvier, le vent peut être frais sur la côte. Prévoyez des vêtements chauds pour les arrêts en extérieur."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "⚓",
+      "titre": "Vlorë, ville de l'indépendance",
+      "legende": "Arrivée à Vlorë, une ville d'importance historique pour l'Albanie. Explorez son musée de l'Indépendance et profitez d'une balade sur son front de mer rénové, offrant une ambiance agréable.",
+      "lieu": "Vlorë",
+      "activites": [
+        "<strong>🚗 Trajet</strong>: Route de la Riviera à Vlorë (environ 2h).",
+        "<strong>📜 Visite</strong>: Découvrez le Musée de l'Indépendance de Vlorë, lieu symbolique de la déclaration d'indépendance de l'Albanie.",
+        "<strong>🚶‍♀️ Balade</strong>: Promenade le long du boulevard principal et du port de Vlorë, avec ses cafés et restaurants."
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Histoire",
+          "texte": "Vlorë est la ville où l'indépendance de l'Albanie a été proclamée en 1912, un moment clé de l'histoire du pays."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🏛️",
+      "titre": "Sites antiques et ville portuaire",
+      "legende": "Plongez dans l'Antiquité avec le site archéologique d'Apollonia, puis rejoignez Durrës, la plus ancienne ville d'Albanie, pour explorer son amphithéâtre romain et profiter de l'air marin.",
+      "lieu": "Fier / Durrës",
+      "activites": [
+        "<strong>🚗 Trajet</strong>: Route de Vlorë à Apollonia (environ 1h), puis à Durrës (environ 1h).",
+        "<strong>🏛️ Visite</strong>: Exploration du parc archéologique d'Apollonia, une ancienne cité grecque et romaine.",
+        "<strong>🏟️ Découverte</strong>: Visite de l'amphithéâtre romain de Durrës, l'un des plus grands des Balkans."
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "Apollonia",
+          "texte": "Apollonia était un centre important dans l'Antiquité, et ses ruines sont magnifiquement situées sur une colline."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "🛡️",
+      "titre": "Sur les traces de Skanderbeg et détente à Tirana",
+      "legende": "Remontez le temps à Krujë, la ville du héros national Skanderbeg, avec son château et son vieux bazar. L'après-midi, retour à Tirana pour une dernière soirée relaxante dans la capitale.",
+      "lieu": "Krujë / Tirana",
+      "activites": [
+        "<strong>🚗 Trajet</strong>: Route de Durrës à Krujë (environ 45 min), puis à Tirana (environ 45 min).",
+        "<strong>🏰 Visite</strong>: Exploration du château de Krujë et du musée Skanderbeg.",
+        "<strong>🛍️ Flânerie</strong>: Balade dans le vieux bazar ottoman de Krujë, idéal pour trouver des souvenirs artisanaux."
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Souvenirs",
+          "texte": "Le bazar de Krujë est l'endroit parfait pour acheter des souvenirs authentiques, comme des tapis, des objets en cuivre ou des bijoux."
+        }
+      ]
+    },
+    {
+      "jour": 13,
+      "symbole": "☕",
+      "titre": "Détente et derniers plaisirs albanais",
+      "legende": "Profitez de cette dernière journée complète pour vous détendre à Tirana. Vous pouvez revisiter un quartier que vous avez aimé, profiter d'un spa, ou simplement savourer l'ambiance des cafés locaux.",
+      "lieu": "Tirana",
+      "activites": [
+        "<strong>🧘‍♀️ Détente</strong>: Matinée libre pour se reposer, faire du shopping de dernière minute ou profiter d'un café.",
+        "<strong>🎨 Optionnel</strong>: Visite de la Pyramide de Tirana, récemment rénovée et transformée en centre culturel.",
+        "<strong>🍽️ Dîner d'adieu</strong>: Savourez un dernier repas albanais dans un restaurant de qualité."
+      ],
+      "illustration": "jour13.jpg",
+      "encarts": [
+        {
+          "symbole": "💆‍♀️",
+          "titre": "Bien-être",
+          "texte": "Certains hôtels à Tirana proposent des services de spa et de massage, une excellente option pour une journée relaxante."
+        }
+      ]
+    },
+    {
+      "jour": 14,
+      "symbole": "🛫",
+      "titre": "Derniers instants et vol retour",
+      "legende": "Profitez d'un dernier petit-déjeuner albanais avant de vous diriger vers l'aéroport. C'est le moment de se remémorer les merveilleux souvenirs de votre voyage relaxant en Albanie.",
+      "lieu": "Tirana",
+      "activites": [
+        "<strong>☕ Petit-déjeuner</strong>: Dernier petit-déjeuner à l'hôtel ou dans un café local.",
+        "<strong>🚗 Retour</strong>: Restitution du véhicule de location à l'aéroport de Tirana.",
+        "<strong>🛫 Départ</strong>: Enregistrement et vol retour vers Milan."
+      ],
+      "illustration": "jour14.jpg",
+      "encarts": [
+        {
+          "symbole": "✈️",
+          "titre": "Aéroport",
+          "texte": "L'aéroport de Tirana (TIA) est moderne et bien desservi. Prévoyez suffisamment de temps pour les formalités de départ."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    {
+      "titre": "Budget vol:",
+      "legende": "A partir de 176 €/pers",
+      "symbole": "🛬"
+    },
+    {
+      "titre": "Budget transports:",
+      "legende": "Environ 395 €/pers (location voiture + essence)",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Budget repas:",
+      "legende": "Environ 490 €/pers",
+      "symbole": "🥗"
+    },
+    {
+      "titre": "Budget logement:",
+      "legende": "Environ 420 €/pers (base chambre double)",
+      "symbole": "🛏️"
+    },
+    {
+      "titre": "Budget activités:",
+      "legende": "Environ 280 €/pers (entrées, dégustations, sources)",
+      "symbole": "🎭"
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Printemps (Avril-Juin) et Automne (Septembre-Octobre) pour des températures douces et moins de foule.",
+      "symbole": "☀️"
+    },
+    {
+      "titre": "Hiver (Janvier) pour les sources chaudes et une ambiance plus calme, mais prévoyez des vêtements chauds.",
+      "symbole": "❄️"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "En janvier, les températures varient entre 0°C et 12°C sur la côte, et peuvent être négatives en montagne. Prévoir des vêtements chauds et imperméables.",
+      "symbole": "🍁"
+    },
+    {
+      "titre": "Le Lek albanais (ALL). Les cartes de crédit sont acceptées dans les grandes villes, mais prévoyez du liquide pour les petites boutiques et les zones rurales.",
+      "symbole": "💳"
+    },
+    {
+      "titre": "Permis français suffisant. Conduite à droite. Les routes principales sont bonnes, mais certaines routes secondaires peuvent être en moins bon état. Prudence requise.",
+      "symbole": "🚗"
+    },
+    {
+      "titre": "Achetez une carte SIM locale (Vodafone, One Albania) à l'arrivée pour un accès facile à internet. Le Wi-Fi est disponible dans la plupart des hébergements.",
+      "symbole": "📶"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Vols",
+      "titre": "Réserve ton vol",
+      "url": "https://www.kayak.fr/flights/MXP-TIA/2026-01-15/2026-01-29",
+      "symbole": "🛬"
+    },
+    {
+      "legende": "Infos officielles et inspirations",
+      "titre": "Tourisme Albanie",
+      "url": "https://albania.al/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Location de voiture",
+      "titre": "Compare les offres",
+      "url": "https://www.rentalcars.com/",
+      "symbole": "🚗"
+    },
+    {
+      "legende": "Météo",
+      "titre": "Météo Albanie",
+      "url": "https://www.accuweather.com/fr/al/albania-weather",
+      "symbole": "🌤️"
+    }
+  ]
+}
