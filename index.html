@@ -1,0 +1,616 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douce évasion hivernale en Albanie : Sources chaudes et trésors cachés </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée à Tirana et premières impressions</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Immersion culturelle et pause gourmande</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Route vers Berat et exploration médiévale</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Dégustation de vins et après-midi libre</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Route vers Gjirokastër et découverte historique</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Détente aux sources chaudes naturelles</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Route vers la côte et ambiance méditerranéenne</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Exploration archéologique et détente côtière</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Voyage le long de la côte ionienne</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Vlorë, ville de l'indépendance</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Sites antiques et ville portuaire</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Sur les traces de Skanderbeg et détente à Tirana</a>
+            
+                <a href="#jour-13" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J13 Détente et derniers plaisirs albanais</a>
+            
+                <a href="#jour-14" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J14 Derniers instants et vol retour</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">ALBANIE</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Douce évasion hivernale en Albanie : Sources chaudes et trésors cachés</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ Du 15 au 29 Janvier 2026</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 Environ 1760 €/pers</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 Environ 6h15 (depuis Saint Maurice, Italie)</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+      <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+      </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée à Tirana et premières impressions</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Atterrissez en douceur dans la capitale albanaise. Après l'installation, une balade relaxante dans le centre vous permettra de vous imprégner de l'ambiance locale et de découvrir les couleurs vibrantes de la ville.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛬 Arrivée</strong>: Atterrissage à l'aéroport international de Tirana (TIA) et récupération du véhicule de location.</li><li><strong>🛏️ Installation</strong>: Check-in à votre hôtel au cœur de Tirana pour un repos bien mérité.</li><li><strong>🚶‍♀️ Balade</strong>: Première exploration douce autour de la place Skanderbeg et du quartier de Blloku, autrefois réservé à l'élite communiste, aujourd'hui animé.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚗 Location de voiture</p>
+                                <p class="text-gray-700">La location d'une voiture est fortement recommandée pour explorer l'Albanie à votre rythme et accéder aux sites plus reculés.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Immersion culturelle et pause gourmande</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez dans l'histoire complexe de l'Albanie à travers ses musées, puis offrez-vous une pause gourmande. L'après-midi sera dédiée à une promenade apaisante dans un parc, loin de l'agitation urbaine.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🏛️ Visite</strong>: Découverte du Bunk'Art 2, un musée fascinant aménagé dans un ancien bunker antiatomique, retraçant l'histoire du régime communiste.</li><li><strong>🍽️ Déjeuner</strong>: Savourez des spécialités albanaises dans un restaurant local du centre-ville.</li><li><strong>🌳 Promenade</strong>: Détendez-vous au Grand Parc de Tirana, un havre de paix idéal pour une balade tranquille autour du lac artificiel.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ Bunk'Art</p>
+                                <p class="text-gray-700">Il existe deux Bunk'Art à Tirana. Bunk'Art 1 est plus grand et plus éloigné, Bunk'Art 2 est plus central et se concentre sur le ministère de l'Intérieur.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Route vers Berat et exploration médiévale</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Prenez la route vers Berat, une ville classée au patrimoine mondial de l'UNESCO. Ses maisons ottomanes empilées sur la colline offrent un spectacle unique. L'après-midi sera consacrée à l'exploration de son château et de ses quartiers historiques.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗 Trajet</strong>: Route panoramique de Tirana à Berat (environ 2h).</li><li><strong>🏰 Visite</strong>: Explorez le château de Berat, toujours habité, et ses églises byzantines.</li><li><strong>🚶‍♀️ Balade</strong>: Flânez dans les quartiers de Mangalem et Gorica, séparés par la rivière Osum, et admirez l'architecture ottomane.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Point de vue</p>
+                                <p class="text-gray-700">Pour la meilleure vue sur les "Mille Fenêtres", traversez le pont de Gorica et regardez vers le quartier de Mangalem.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Dégustation de vins et après-midi libre</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez de la matinée pour découvrir les saveurs locales avec une visite de vignoble. L'après-midi sera libre pour vous détendre, explorer davantage Berat à votre rythme ou simplement profiter de l'ambiance paisible de la ville.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🍷 Dégustation</strong>: Visite d'un vignoble local (ex: Kantina Cobo ou Nurellari) pour une dégustation de vins albanais.</li><li><strong>🍽️ Déjeuner</strong>: Repas traditionnel dans une ferme-restaurant près du vignoble.</li><li><strong>🧘‍♀️ Temps libre</strong>: Profitez d'un après-midi relaxant à Berat, peut-être pour un café au bord de la rivière ou une lecture tranquille.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Vins albanais</p>
+                                <p class="text-gray-700">L'Albanie produit d'excellents vins, souvent méconnus. N'hésitez pas à goûter les cépages locaux comme le Kallmet ou le Shesh.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Route vers Gjirokastër et découverte historique</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Poursuivez votre voyage vers le sud jusqu'à Gjirokastër, une autre ville UNESCO surnommée la "Ville de Pierre". Ses toits d'ardoise et son imposante forteresse vous transporteront dans le passé.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗 Trajet</strong>: Route de Berat à Gjirokastër (environ 3h).</li><li><strong>🏰 Visite</strong>: Exploration de l'impressionnant château de Gjirokastër, offrant des vues panoramiques sur la ville et la vallée.</li><li><strong>🚶‍♀️ Balade</strong>: Flânez dans les ruelles pavées du vieux bazar et admirez les maisons-tours caractéristiques.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📚 Littérature</p>
+                                <p class="text-gray-700">Gjirokastër est la ville natale de l'écrivain Ismail Kadaré, dont les œuvres décrivent souvent l'atmosphère unique de la ville.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Détente aux sources chaudes naturelles</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Une journée dédiée à la relaxation profonde. Dirigez-vous vers Permet pour découvrir les célèbres sources chaudes de Benja, nichées dans un cadre naturel magnifique. Un moment de pur bien-être au cœur de la nature albanaise.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗 Trajet</strong>: Route de Gjirokastër à Permet (environ 1h30) puis vers les sources de Benja.</li><li><strong>♨️ Baignade</strong>: Profitez des eaux thermales naturelles des sources de Benja, réputées pour leurs vertus thérapeutiques.</li><li><strong>🚶‍♀️ Promenade</strong>: Courte balade autour du pont ottoman de Kadiut et le long de la rivière Lengarica, dans un paysage apaisant.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⚠️ Accès</p>
+                                <p class="text-gray-700">L'accès aux sources de Benja peut être un peu rustique en hiver, mais l'expérience en vaut la peine. Prévoyez des chaussures confortables.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Route vers la côte et ambiance méditerranéenne</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Quittez l'intérieur des terres pour rejoindre la magnifique Riviera albanaise. Sarandë, avec ses vues sur Corfou, vous accueillera pour une ambiance plus douce et maritime.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗 Trajet</strong>: Route de Permet à Sarandë (environ 2h30-3h), traversant des paysages variés.</li><li><strong>🛏️ Installation</strong>: Check-in à votre hôtel à Sarandë, avec vue sur la mer si possible.</li><li><strong>🚶‍♀️ Balade</strong>: Promenade relaxante le long de la promenade de Sarandë, en admirant le coucher de soleil sur la mer Ionienne.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍽️ Cuisine de la mer</p>
+                                <p class="text-gray-700">Sarandë est réputée pour ses fruits de mer frais. Ne manquez pas de déguster un plat de poisson ou de fruits de mer locaux.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Exploration archéologique et détente côtière</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Une journée mêlant histoire et beauté naturelle. Visitez le site antique de Butrint, classé UNESCO, puis détendez-vous sur les plages idylliques de Ksamil, même en hiver, pour profiter de l'air marin.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🏛️ Visite</strong>: Découverte du parc archéologique de Butrint, un site antique magnifiquement préservé, témoin de plusieurs civilisations.</li><li><strong>🍽️ Déjeuner</strong>: Repas dans un restaurant avec vue sur la mer à Ksamil.</li><li><strong>🏖️ Détente</strong>: Promenade sur les plages de sable blanc de Ksamil, réputées pour leurs eaux cristallines (même si la baignade est froide en janvier).</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌳 Nature et histoire</p>
+                                <p class="text-gray-700">Butrint est un site unique où l'histoire se mêle à une nature luxuriante, offrant une atmosphère très paisible.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Voyage le long de la côte ionienne</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Empruntez la spectaculaire route côtière qui serpente entre mer et montagnes. Arrêtez-vous dans de charmants villages comme Himarë ou Dhermi pour des vues imprenables et une atmosphère authentique.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗 Trajet</strong>: Route panoramique de Sarandë vers le nord, le long de la Riviera Albanaise.</li><li><strong>📸 Arrêts</strong>: Faites des pauses photo aux points de vue époustouflants et explorez les villages côtiers comme Himarë ou Dhermi.</li><li><strong>☕ Pause</strong>: Profitez d'un café ou d'un thé dans un village, en observant la vie locale.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌬️ Vent</p>
+                                <p class="text-gray-700">En janvier, le vent peut être frais sur la côte. Prévoyez des vêtements chauds pour les arrêts en extérieur.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Vlorë, ville de l'indépendance</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Arrivée à Vlorë, une ville d'importance historique pour l'Albanie. Explorez son musée de l'Indépendance et profitez d'une balade sur son front de mer rénové, offrant une ambiance agréable.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗 Trajet</strong>: Route de la Riviera à Vlorë (environ 2h).</li><li><strong>📜 Visite</strong>: Découvrez le Musée de l'Indépendance de Vlorë, lieu symbolique de la déclaration d'indépendance de l'Albanie.</li><li><strong>🚶‍♀️ Balade</strong>: Promenade le long du boulevard principal et du port de Vlorë, avec ses cafés et restaurants.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Histoire</p>
+                                <p class="text-gray-700">Vlorë est la ville où l'indépendance de l'Albanie a été proclamée en 1912, un moment clé de l'histoire du pays.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sites antiques et ville portuaire</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez dans l'Antiquité avec le site archéologique d'Apollonia, puis rejoignez Durrës, la plus ancienne ville d'Albanie, pour explorer son amphithéâtre romain et profiter de l'air marin.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗 Trajet</strong>: Route de Vlorë à Apollonia (environ 1h), puis à Durrës (environ 1h).</li><li><strong>🏛️ Visite</strong>: Exploration du parc archéologique d'Apollonia, une ancienne cité grecque et romaine.</li><li><strong>🏟️ Découverte</strong>: Visite de l'amphithéâtre romain de Durrës, l'un des plus grands des Balkans.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ Apollonia</p>
+                                <p class="text-gray-700">Apollonia était un centre important dans l'Antiquité, et ses ruines sont magnifiquement situées sur une colline.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sur les traces de Skanderbeg et détente à Tirana</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Remontez le temps à Krujë, la ville du héros national Skanderbeg, avec son château et son vieux bazar. L'après-midi, retour à Tirana pour une dernière soirée relaxante dans la capitale.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗 Trajet</strong>: Route de Durrës à Krujë (environ 45 min), puis à Tirana (environ 45 min).</li><li><strong>🏰 Visite</strong>: Exploration du château de Krujë et du musée Skanderbeg.</li><li><strong>🛍️ Flânerie</strong>: Balade dans le vieux bazar ottoman de Krujë, idéal pour trouver des souvenirs artisanaux.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Souvenirs</p>
+                                <p class="text-gray-700">Le bazar de Krujë est l'endroit parfait pour acheter des souvenirs authentiques, comme des tapis, des objets en cuivre ou des bijoux.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-13" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 13</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Détente et derniers plaisirs albanais</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez de cette dernière journée complète pour vous détendre à Tirana. Vous pouvez revisiter un quartier que vous avez aimé, profiter d'un spa, ou simplement savourer l'ambiance des cafés locaux.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🧘‍♀️ Détente</strong>: Matinée libre pour se reposer, faire du shopping de dernière minute ou profiter d'un café.</li><li><strong>🎨 Optionnel</strong>: Visite de la Pyramide de Tirana, récemment rénovée et transformée en centre culturel.</li><li><strong>🍽️ Dîner d'adieu</strong>: Savourez un dernier repas albanais dans un restaurant de qualité.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour13.jpg" class="w-full h-64 object-cover" alt="Jour 13">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💆‍♀️ Bien-être</p>
+                                <p class="text-gray-700">Certains hôtels à Tirana proposent des services de spa et de massage, une excellente option pour une journée relaxante.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-14" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 14</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derniers instants et vol retour</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez d'un dernier petit-déjeuner albanais avant de vous diriger vers l'aéroport. C'est le moment de se remémorer les merveilleux souvenirs de votre voyage relaxant en Albanie.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>☕ Petit-déjeuner</strong>: Dernier petit-déjeuner à l'hôtel ou dans un café local.</li><li><strong>🚗 Retour</strong>: Restitution du véhicule de location à l'aéroport de Tirana.</li><li><strong>🛫 Départ</strong>: Enregistrement et vol retour vers Milan.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Albanie-n81q86aa438266f/main/jour14.jpg" class="w-full h-64 object-cover" alt="Jour 14">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">✈️ Aéroport</p>
+                                <p class="text-gray-700">L'aéroport de Tirana (TIA) est moderne et bien desservi. Prévoyez suffisamment de temps pour les formalités de départ.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget vol: </strong>A partir de 176 €/pers</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget transports: </strong>Environ 395 €/pers (location voiture + essence)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget repas: </strong>Environ 490 €/pers</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget logement: </strong>Environ 420 €/pers (base chambre double)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget activités: </strong>Environ 280 €/pers (entrées, dégustations, sources)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Printemps (Avril-Juin) et Automne (Septembre-Octobre) pour des températures douces et moins de foule.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Hiver (Janvier) pour les sources chaudes et une ambiance plus calme, mais prévoyez des vêtements chauds.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🍁 En janvier, les températures varient entre 0°C et 12°C sur la côte, et peuvent être négatives en montagne. Prévoir des vêtements chauds et imperméables.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">💳 Le Lek albanais (ALL). Les cartes de crédit sont acceptées dans les grandes villes, mais prévoyez du liquide pour les petites boutiques et les zones rurales.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🚗 Permis français suffisant. Conduite à droite. Les routes principales sont bonnes, mais certaines routes secondaires peuvent être en moins bon état. Prudence requise.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">📶 Achetez une carte SIM locale (Vodafone, One Albania) à l'arrivée pour un accès facile à internet. Le Wi-Fi est disponible dans la plupart des hébergements.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Albanie-n81q86aa438266f/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://www.kayak.fr/flights/MXP-TIA/2026-01-15/2026-01-29" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🛬 Réserve ton vol</strong></a></li>
+                    
+                        <li><a href="https://albania.al/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📘 Tourisme Albanie</strong></a></li>
+                    
+                        <li><a href="https://www.rentalcars.com/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🚗 Compare les offres</strong></a></li>
+                    
+                        <li><a href="https://www.accuweather.com/fr/al/albania-weather" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🌤️ Météo Albanie</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
